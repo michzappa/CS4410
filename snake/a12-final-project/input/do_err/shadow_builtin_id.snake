@@ -1,0 +1,7 @@
+def print(x):
+  x
+
+def input():
+  3
+
+let oh_no = input() in print(oh_no)

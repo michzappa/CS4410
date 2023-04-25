@@ -1,0 +1,13 @@
+def l():
+  let a = (1, 2) in
+  (lambda: a)
+
+def f(n):
+  let a = (1, (2, (3, (4, n)))) in
+    if n > 0 :
+      f(n - 1)
+    else:
+      n
+
+let _ = f(500000) in
+l()()

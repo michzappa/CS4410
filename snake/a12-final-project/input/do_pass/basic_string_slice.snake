@@ -1,0 +1,7 @@
+let a = "hello" in
+  print(a[0..5]);
+  print(a[0..0]);
+  print(a[1..4]);
+  let firstHalf = a[0..3],
+      secondHalf = a[3..5] in
+  "{firstHalf}{secondHalf}"

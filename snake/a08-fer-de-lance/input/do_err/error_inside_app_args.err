@@ -1,0 +1,2 @@
+The identifier x, redefined at <do_err/error_inside_app_args, 4:13-4:14>, duplicates one at <do_err/error_inside_app_args, 4:6-4:7>
+The identifier a, used at <do_err/error_inside_app_args, 4:26-4:27>, is not in scope

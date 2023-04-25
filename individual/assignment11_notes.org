@@ -1,0 +1,86 @@
+* Exceptions
+No OutOfMemoryException since that is irrecoverable.
+
+- Exception: catches all errors, contains nothing XXX: maybe don't do this one
+- ArithmeticException: contains the expr that was not-a-number
+- ArityException: contains the arity of the failed call
+- ComparisonException: contains the expr that was not-a-number
+- HighIndexException: contains the index expr that was too high
+- IndexNotNumException: contains the expr that was not-a-number
+- LogicException: contains the expr that was not-a-boolean
+- LowIndexException: contains the index expr that was too low
+- NilDerefException: contains nothing
+- NotClosureException: contains the expr that was not-a-closure
+- NotTupleException: contains the expr that was not-a-tuple
+- OverflowException: contains the expr which overflowed
+#+begin_src snake
+  4 + true => ArithmeticException true
+  (lambda: 4)(3) => ArityException 1
+  false < 3 => ComparisonException false
+  (1, 2, 3)[3] => HighIndexException 3
+  (1, 2, 3)[true] => IndexNotNumException true
+  4 || false => LogicException 4
+  (1, 2, 3)[-1] => LowIndexExeption -1
+  nil[1] => NilDerefException
+  4(1) => NotClosureException 4
+  4[3] => NotTupleException 4
+  12345678912345 * 12345678912345 => OverflowException -1603819415859337999
+#+end_src
+
+#+begin_src snake
+  try {
+      4 + true
+  } catch (ArithmeticError value) {
+      value
+  } => true
+
+  # interior catches work first
+  try {
+    try {
+      4 + true
+    } catch (ArithmeticError value) {
+      true && value
+    }
+  } catch (ArithmeticError value) {
+      false && value
+  } => true
+
+  try {
+      let a = print(4 + true) in
+      1
+  } catch (ArithmeticError value) {
+      value
+  } => true (no printing)
+
+  # larger call-stack inside try not a problem
+  try{
+    (lambda(a): a + 2)(true)
+  } catch (ArithmeticError value){
+    let b = false in b || value
+  } => true
+#+end_src
+
+- well-formedness pass for what errors and their parameters are listed in the catch block. underscore can be used to ignore them when applicable
+#+begin_src snake
+  try {
+    <snake expr>
+  } catch Exception {
+    <snake expr>
+  }
+
+  try {
+    <snake expr>
+  } catch (ArityException found) {
+    <snake expr>
+  }
+
+  try {
+    try {
+      <snake expr>
+    } catch (ArithmeticException found) {
+      <snake expr>
+    }
+  } catch (ArityException found) {
+    <snake expr>
+  }
+#+end_src

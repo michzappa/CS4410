@@ -1,0 +1,7 @@
+def a(n):
+  printStack(n)
+
+def b(n):
+  a(n)
+
+b(3)

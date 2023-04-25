@@ -1,0 +1,2 @@
+let a = "hello", b = "cheese", c = "false" in
+printStack("{a} {b} {c}")

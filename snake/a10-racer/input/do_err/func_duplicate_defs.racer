@@ -1,0 +1,19 @@
+def f(x, y):
+  x + y
+
+and def f(x, y):
+  x + y
+
+and def f():
+  false
+
+and def g():
+  true
+
+and def f(a, b, c):
+  g()
+
+and def g(a, b):
+  f(a, b)
+
+false

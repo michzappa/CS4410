@@ -1,0 +1,41 @@
+def link(first, rest):
+  (first, rest)
+
+def is_nil(l):
+  l == nil
+
+def length(l):
+  if is_nil(l): 0
+  else:
+  let (_, r) = l in 
+    1 + length(r)
+
+def sum(l):
+  sum_help(l, 0)
+
+def sum_help(l, acc):
+  if is_nil(l): acc
+  else:
+    let (f, r) = l in
+      sum_help(r, acc + f)
+
+def append(l1, l2):
+  if is_nil(l1): l2
+  else:
+    if is_nil(l2): l1
+    else:
+      let (f, r) = l1 in
+        link(f, append(r, l2))
+
+def reverse(l):
+  if is_nil(l): nil
+  else:
+    let (f, r) = l in
+      append(reverse(r), link(f, nil))
+
+let l1 = link(1, link(2, link(3, link(4, nil)))),
+    l2 = link(true, link(6, link(false, link(8, nil)))),
+    sum = print(sum(l1)),
+    app = print(append(l1, l2)),
+    rev = reverse(l2) in
+append(rev, app)

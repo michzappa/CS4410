@@ -1,0 +1,3 @@
+let a = to_string(241), b = to_string(-563) in
+let c = to_string(to_int(a) + to_int(b)) in
+"{a} + {b} = {c}"

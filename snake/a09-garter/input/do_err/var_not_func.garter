@@ -1,0 +1,4 @@
+def test(n):
+  n
+
+test + 3

@@ -1,0 +1,5 @@
+"hello";
+"cheese";
+"32"[0..2];
+"elephant"[1..7][2..4];
+"goodbye"

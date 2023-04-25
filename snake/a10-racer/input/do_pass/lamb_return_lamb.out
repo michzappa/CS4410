@@ -1,0 +1,5 @@
+<closure, arity = 3, free_var_cnt = 0, []>
+<closure, arity = 2, free_var_cnt = 3, [1, 2, 3]>
+<closure, arity = 0, free_var_cnt = 5, [4, 5, 6, 7, 8]>
+55
+3

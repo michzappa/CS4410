@@ -1,0 +1,9 @@
+let a = 3, b = (1, 2) in
+a;
+b;
+(a, b);
+(3, 5);
+true;
+isbool(b);
+((b, b), (b, b));
+2

@@ -1,0 +1,3 @@
+let x = 4, y = let a = x + 3 in a - 2, z = y * x in
+  let x = add1(x), y = sub1(y), z = add1(z) in
+    (x + y) * z

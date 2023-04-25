@@ -1,0 +1,19 @@
+# making manolios proud
+def thisIsPropertyTesting(s):
+    let rec help =
+      (lambda(n):
+        if (n == len(s)): ""
+        else:
+          let slice = s[n..(len(s))],
+              sliceNoHigh = s[n..] in
+            if(equal(slice, sliceNoHigh)):
+              help(n + 1)
+            else:
+              fail("FAILED for s=\"{s}\", n={n}");
+              help(n + 1))
+    in help(0)
+
+thisIsPropertyTesting("hello");
+thisIsPropertyTesting("michael");
+thisIsPropertyTesting("northeastern university");
+"If you're seeing this the property testing passed."

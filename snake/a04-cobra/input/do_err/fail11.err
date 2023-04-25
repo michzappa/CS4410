@@ -1,0 +1,1 @@
+Binding error: The identifier z, defined at <do_err/fail11, 1:11-1:16>, shadows one defined at <do_err/fail11, 1:4-1:9>

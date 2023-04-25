@@ -1,0 +1,1 @@
+Binding error: The identifier x, defined at <do_err/fail3, 18:22-18:27>, shadows one defined at <do_err/fail3, 18:8-18:13>

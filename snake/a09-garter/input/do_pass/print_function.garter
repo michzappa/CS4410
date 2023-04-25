@@ -1,0 +1,16 @@
+def f():
+  3
+
+def g(a, b):
+  a + b + f()
+
+def a(f):
+  b(f, f, f)
+
+and def b(c, d, e):
+  a(e)
+
+print(f);
+print(g);
+print(a);
+b

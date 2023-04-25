@@ -1,0 +1,66 @@
+def link(first, rest):
+  (first, rest)
+
+def is_nil(l):
+  l == nil
+
+def append(l1, l2):
+  if is_nil(l1): l2
+  else:
+    if is_nil(l2): l1
+    else:
+      let (f, r) = l1 in
+        link(f, append(r, l2))
+
+def reverse(l):
+  if is_nil(l): nil
+  else:
+    let (f, r) = l in
+      append(reverse(r), link(f, nil))
+
+# f: a -> b -> a, base: a, l: [b]
+def foldl(f, base, l):
+  if is_nil(l): base
+  else:
+    let (first, rest) = l in
+      foldl(f, f(base, first), rest)
+
+# f: a -> b -> b, base: b, l: [a]
+def foldr(f, base, l):
+  if is_nil(l): base
+  else:
+    let (first, rest) = l in
+      f(first, foldr(f, base, rest))
+
+# f: a -> b, l: [a]
+def map(f, l):
+  if is_nil(l): nil
+  else:
+    let (first, rest) = l in
+      link(f(first), map(f, rest))
+
+def iota(n):
+  if n == 0: nil
+  else: link(1, iota(n - 1))
+
+def sum(l):
+  foldl((lambda(acc, x): x + acc), 0, l)
+
+def length(l):
+  foldl((lambda(acc, ignore): acc + 1), 0, l)
+
+# f: a -> bool, l: [a]
+def andmap(f, l):
+  foldl((lambda(acc, x): f(x) && acc), true, l)
+
+# f: a -> bool, l: [a]
+def ormap(f, l):
+  foldl((lambda(acc, x): f(x) || acc), false, l)
+
+let l1 = link(1, link(2, link(3, link(4, nil)))) in
+let l2 = link(5, link(6, link(7, link(8, nil)))) in
+  print(map((lambda(n): n + 1), l1));
+  print(sum(l2));
+  print(length(l1));
+  print(ormap((lambda(n): n > 3), l1));
+  andmap((lambda(n): n > 3), l1)

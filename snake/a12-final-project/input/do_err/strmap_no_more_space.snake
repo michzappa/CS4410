@@ -1,0 +1,6 @@
+let a = to_string(1),
+    b = to_string(2),
+    c = to_string(3),
+    d = to_string(4)
+in
+a + b + c + d

@@ -1,0 +1,2 @@
+The function name hi, redefined at <do_err/dup_decls_diff_arity, 4:0-5:3>, duplicates one at <do_err/dup_decls_diff_arity, 1:0-2:3>
+The function called at <do_err/dup_decls_diff_arity, 8:10-8:15> expected an arity of 0, but received 1 arguments

@@ -1,0 +1,8 @@
+let _ = print(equal(1, 3)) in
+let _ = print(equal(true, true)) in
+let _ = print(equal(4, 4)) in
+let _ = print(equal((true, false), (false, true))) in
+let _ = print(equal((1, 5, (3, false)), (1, 5, (3, false)))) in
+let _ = print(equal((), ())) in
+let _ = print(equal(((), (false,)), ((), (false,)))) in
+8

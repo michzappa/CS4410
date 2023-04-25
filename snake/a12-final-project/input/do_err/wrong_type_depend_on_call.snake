@@ -1,0 +1,12 @@
+def f(c, t, f):
+  let x = (if c :
+    t
+  else:
+    f)
+  in
+  print(x)
+
+let a = f(true, 3, 5) in
+let b = f(5, a, false) in
+a + b
+

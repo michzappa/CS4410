@@ -1,0 +1,4 @@
+no_builtins
+no_dce
+heap 43
+alloc naive

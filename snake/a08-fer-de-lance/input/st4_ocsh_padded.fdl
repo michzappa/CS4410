@@ -1,0 +1,8 @@
+def fact_acc(n, acc):
+  if n < 2:
+    printStack(acc)
+  else:
+    fact_acc(n - 1, acc * n)
+
+let x = 5 in
+fact_acc(x, 1)

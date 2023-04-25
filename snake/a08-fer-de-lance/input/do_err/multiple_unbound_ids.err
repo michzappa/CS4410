@@ -1,0 +1,3 @@
+The identifier y, used at <do_err/multiple_unbound_ids, 1:4-1:5>, is not in scope
+The identifier z, used at <do_err/multiple_unbound_ids, 1:8-1:9>, is not in scope
+The identifier w, used at <do_err/multiple_unbound_ids, 1:12-1:13>, is not in scope

@@ -1,0 +1,45 @@
+let A = (0,), B = (0,), C = (0,) in
+let get_a = (lambda: A[0]),
+    get_b = (lambda: B[0]),
+    get_c = (lambda: C[0])
+in
+let set_a = (lambda(v): A[0] := v),
+    set_b = (lambda(v): B[0] := v),
+    set_c = (lambda(v): C[0] := v)
+in
+let c_add_a_b = (lambda: set_c(A[0] + B[0])),
+    c_sub_a_b = (lambda: set_c(A[0] - B[0])),
+    c_mul_a_b = (lambda: set_c(A[0] * B[0]))
+in
+let swap_a_b = (lambda: 
+                  let tmp = A[0] in
+                  begin 
+                    A[0] := B[0];
+                    B[0] := tmp
+                  end),
+    swap_a_c = (lambda: 
+                  let tmp = A[0] in
+                  begin 
+                    A[0] := C[0];
+                    C[0] := tmp
+                  end),
+    swap_b_c = (lambda: 
+                  let tmp = B[0] in
+                  begin 
+                    B[0] := C[0];
+                    C[0] := tmp
+                  end)
+in
+let print_abc = (lambda: print((A[0], B[0], C[0]))) in
+print_abc();
+set_a(5);
+set_b(3);
+c_add_a_b();
+print_abc();
+set_a(get_c());
+c_mul_a_b();
+print_abc();
+swap_b_c();
+c_sub_a_b();
+print_abc();
+get_c()

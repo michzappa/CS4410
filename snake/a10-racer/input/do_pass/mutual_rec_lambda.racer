@@ -1,0 +1,20 @@
+let rec
+  even = (lambda(n):
+  if(n <= 0):
+    true
+  else:
+    odd(n - 1)),
+
+  odd = (lambda(n):
+  if(n <= 0):
+    false
+  else:
+    even(n - 1))
+
+in let a = print(even(4)),
+    b = print(even(2)),
+    c = print(even(5)),
+    d = print(odd(83)),    
+    e = print(odd(34)),
+    f = print(odd(124)) in
+0    

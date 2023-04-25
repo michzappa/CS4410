@@ -1,0 +1,10 @@
+def fib_acc(n, c, (a, b)):
+  if n == c :
+    printStack(a)
+  else:
+    fib_acc(n, c + 1, (b, b + a))
+
+def fib(n):
+  fib_acc(n, 0, (0, 1))
+
+fib(9)

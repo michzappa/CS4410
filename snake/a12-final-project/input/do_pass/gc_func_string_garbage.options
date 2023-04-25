@@ -1,0 +1,4 @@
+heap 6
+string 3
+no_dce
+no_builtins

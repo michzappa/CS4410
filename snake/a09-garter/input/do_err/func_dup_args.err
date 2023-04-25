@@ -1,0 +1,6 @@
+The identifier a, redefined at <do_err/func_dup_args, 1:9-1:10>, duplicates one at <do_err/func_dup_args, 1:6-1:7>
+The identifier a, redefined at <do_err/func_dup_args, 1:12-1:13>, duplicates one at <do_err/func_dup_args, 1:6-1:7>
+The identifier a, redefined at <do_err/func_dup_args, 1:15-1:16>, duplicates one at <do_err/func_dup_args, 1:6-1:7>
+The identifier a, redefined at <do_err/func_dup_args, 1:18-1:19>, duplicates one at <do_err/func_dup_args, 1:6-1:7>
+The identifier b, redefined at <do_err/func_dup_args, 1:24-1:25>, duplicates one at <do_err/func_dup_args, 1:21-1:22>
+The identifier b, redefined at <do_err/func_dup_args, 1:27-1:28>, duplicates one at <do_err/func_dup_args, 1:21-1:22>

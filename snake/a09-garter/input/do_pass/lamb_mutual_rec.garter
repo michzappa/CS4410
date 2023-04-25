@@ -1,0 +1,6 @@
+let rec a = (lambda(n): b(n)),
+        b = (lambda(n): c(n)),
+        c = (lambda(n): d(n)),
+        d = (lambda(n): if n > 0 : a(n - 1) else: n)
+in
+d(10000)

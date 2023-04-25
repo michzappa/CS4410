@@ -1,0 +1,23 @@
+(library
+  (name racer_impl)
+  (modules assembly compile environment errors exprs graph 
+           phases pretty runner lexer parser wellformed 
+           utils desugar anf regalloc dce)
+  (libraries ounit2 extlib unix)
+  (wrapped false))
+
+(ocamllex (modules lexer))
+(menhir (modules parser))
+
+(executable
+  (name main)
+  (modules main)
+  (libraries unix str racer_impl))
+
+(test
+  (name test)
+  (modules test)
+  (libraries unix str racer_impl))
+
+(env (dev (flags (:standard -warn-error -A))))
+

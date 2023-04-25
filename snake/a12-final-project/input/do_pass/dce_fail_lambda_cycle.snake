@@ -1,0 +1,5 @@
+let rec a = (lambda: c()),
+        b = (lambda: a()),
+        c = (lambda: a())
+in
+1

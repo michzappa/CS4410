@@ -1,0 +1,13 @@
+def max(x, y):
+  if (x <= y):
+    y
+  else:
+    max(y, x)
+
+# cycles: [y, x]
+
+let a = print(max(1, 2)),
+    b = print(max(2, 1)),
+    c = print(max(3, 3))
+in
+false

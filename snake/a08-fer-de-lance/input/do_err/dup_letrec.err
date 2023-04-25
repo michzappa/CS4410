@@ -1,0 +1,2 @@
+The identifier f, redefined at <do_err/dup_letrec, 2:8-2:9>, duplicates one at <do_err/dup_letrec, 1:8-1:9>
+Binding error at do_err/dup_letrec, 2:8-2:13: Non-lambda bound to f

@@ -1,0 +1,16 @@
+def f0():
+  10000
+
+def f1():
+  -2400
+
+def f2():
+  true || false || true
+
+def f3():
+  if print(f2()) :
+    f1()
+  else:
+    f0()
+
+f3()

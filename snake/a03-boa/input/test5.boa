@@ -1,0 +1,10 @@
+let x = add1(2),
+    y = if x : 4 * 3 else: let y = x in x,
+    z = add1(add1(x + 4)),
+    w = let a = x,
+            b = z * z,
+            c = sub1(b - a)
+        in b,
+    l = 42,
+    m = w
+in m

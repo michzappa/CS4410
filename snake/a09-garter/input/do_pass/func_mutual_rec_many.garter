@@ -1,0 +1,26 @@
+def f1(a, b, c):
+    let x = print(a) in
+    let y = print(b) in
+    let z = print(c) in
+    f2(add1(a), sub1(b), c * c)
+
+and def f2(a, b, c):
+    f3(b, c, a)
+
+and def f3(a, b, c):
+    f4(b, c, a)
+
+and def f4(a, b, c):
+    if c <= a :
+        f5(b, c, a)
+    else:
+        f5(a, b, c)
+
+and def f5(a, b, c):
+    if a > 5 :
+        a + b + c
+    else:
+        f1(a, b, c)
+
+f1(2, 2, 2)
+    

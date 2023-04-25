@@ -1,0 +1,6 @@
+(let ((x 10)
+      (y (add1 x))
+      (z (sub1 x))
+      (w (let ((a (sub1 z)))
+            y)))
+   (add1 w))

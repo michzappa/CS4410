@@ -1,0 +1,6 @@
+def f():  # alloc 4 bytes
+  let a = (1, 2, 3) in
+  5
+
+f();      # alloc 4 bytes
+(1, 2, 3) # gc then alloc 4 bytes

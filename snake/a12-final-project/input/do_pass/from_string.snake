@@ -1,0 +1,6 @@
+let i = print(to_int("43")),
+    n = print(to_int("-38")),
+    z = print(to_int("0")),
+    t = print(to_bool("true")),
+    f = print(to_bool("false")) in
+print(i + n + z); t || f    

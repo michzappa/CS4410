@@ -1,0 +1,20 @@
+def garbage():
+  "a" ^ "b" ^ "c" ^ "d"
+
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage()

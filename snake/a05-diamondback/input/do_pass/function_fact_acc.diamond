@@ -1,0 +1,20 @@
+def fact_acc(n, acc):
+  if n < 2:
+     acc
+  else:
+     fact_acc(n - 1, acc * n)
+
+def fact(n):
+  fact_acc(n, 1)
+
+let a = print(fact(1)),
+    b = print(fact(2)),
+    c = print(fact(3)),
+    d = print(fact(4)),
+    e = print(fact(5)),
+    f = print(fact(6)),
+    g = print(fact(7)),
+    h = print(fact(8)),
+    i = print(fact(9)),
+    j = print(fact(10)) in
+0

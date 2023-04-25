@@ -1,0 +1,9 @@
+def hi():
+  4
+
+def hi(n):
+  n
+
+let hi1 = hi(),
+    hi2 = hi(3) in
+  hi1 + hi2

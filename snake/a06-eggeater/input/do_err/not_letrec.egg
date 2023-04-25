@@ -1,0 +1,10 @@
+let x = 2,
+    y = if x : 4 * 3 else: let y = x in x,
+    z = 3 * 4,
+    w = let a = x,
+            b = w,
+            c = b
+        in b,
+    l = 42,
+    m = w
+in m

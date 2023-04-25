@@ -1,0 +1,4 @@
+let a = "hola",
+    b = "bonjour",
+    c = "hello" in
+print(a); print(b); print(c)

@@ -1,0 +1,8 @@
+let a = print((1,2)) in
+let b = print(a[0]) in
+let c = print(a[1]) in
+let x = print((3,)) in
+let y = print(x[0]) in
+let ans1 = print(y + b + c) in
+let set_res = print(a[0] := 10) in
+a[0] + a[1]

@@ -1,0 +1,23 @@
+def garbage():
+  let a = (3, 4, 5) in
+  let b = (1, (5, 3), 6) in
+  let c = (2, 4, 6) in
+  let d = (8, 9, 10, false, true) in
+  let e = to_string(5) in
+  let f = (58, -1, 312) in
+  (lambda: a; b; c; d; e; f)
+
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage()

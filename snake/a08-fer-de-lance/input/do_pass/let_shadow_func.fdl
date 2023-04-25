@@ -1,0 +1,5 @@
+def test(n):
+  n
+
+let test = 4 in
+  test

@@ -1,0 +1,38 @@
+def charAtIndex(s, i):
+  if(i >= len(s)):
+    ""
+  else:
+    s[i..(i+1)]
+
+def startsWith(s, prefix):
+  let slen = len(s), plen = len(prefix) in
+  slen >= plen && equal(prefix, s[0..plen])
+
+def endsWith(s, suffix):
+  let slen = len(s), sulen = len(suffix) in
+  slen >= sulen && equal(suffix, s[slen-sulen..slen])
+
+def quote(val):
+  "\"" ^ to_string(val) ^ "\""
+
+def contains(str1, str2):
+  let rec help = (lambda(s1, s2):
+    if(equal(s2, "")):
+      true
+    else:
+      if(startsWith(s1, charAtIndex(s2, 0))):
+        help(s1[1..], s2[2..])
+      else:
+        false) in
+    (if(len(str1) < len(str2)):
+      false
+     else:
+       if(equal(str2, "")):
+         true
+       else:
+         if(startsWith(str1, charAtIndex(str2, 0))):
+           help(str1[1..], str2[1..])
+         else:
+           contains(str1[1..], str2))
+
+quote("string library")

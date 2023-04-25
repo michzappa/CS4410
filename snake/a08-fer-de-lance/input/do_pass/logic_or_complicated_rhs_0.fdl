@@ -1,0 +1,14 @@
+(
+    let x = 5, y = 3, z = true in
+    z
+)
+||
+(
+    let a = 1, b = a, c = b, d = c in
+    if a < b :
+        let a = 100, b = 150 in
+        isnum(a * b * c * d * a)
+    else:
+        let a = 10, b = 15, c = 20 in
+        a > b
+)

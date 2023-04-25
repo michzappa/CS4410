@@ -1,0 +1,10 @@
+let lamblamb = (lambda(a, b, c): 
+                 (lambda(d, e): 
+                   (lambda: a + b + c + d + e)))
+in
+let first  = print(lamblamb),
+    second = print(lamblamb(1, 2, 3)),
+    third  = print(lamblamb(4, 5, 6)(7, 8)),
+    fourth = print(lamblamb(9, 10, 11)(12, 13)())
+in
+second(-1, -2)()

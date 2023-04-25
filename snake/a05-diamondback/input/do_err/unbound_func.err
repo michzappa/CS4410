@@ -1,0 +1,4 @@
+The function name f, used at <do_err/unbound_func, 1:8-1:12>, is not in scope
+The function name f, used at <do_err/unbound_func, 2:8-2:12>, is not in scope
+The function name g, used at <do_err/unbound_func, 3:8-3:12>, is not in scope
+The function name z, used at <do_err/unbound_func, 4:0-4:10>, is not in scope

@@ -1,0 +1,13 @@
+def value_gt_first(f, a, b, c, d, e):
+  if (a > f):
+    a
+  else:
+    value_gt_first(f, e, a, b, c, d)
+
+# cycles: [f] [e, a, b, c, d]
+
+let a = print(value_gt_first(1, 2, 0, 3, 4, 5)),
+    b = print(value_gt_first(4, 2, 0, 3, 4, 5)),
+    c = print(value_gt_first(7, 3, 8, 1, 4, 3))
+in
+false

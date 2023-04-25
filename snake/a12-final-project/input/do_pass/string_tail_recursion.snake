@@ -1,0 +1,7 @@
+def funny(s, n, acc):
+  if n <= 0 :
+    acc
+  else:
+    funny(s, n - 1, acc ^ s)
+
+funny("Cheese!\n", 10000, "")

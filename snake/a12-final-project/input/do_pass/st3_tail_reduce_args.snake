@@ -1,0 +1,19 @@
+def f5(a, b, c, d, e):
+  f4(b, c, d, e)
+
+and def f4(a, b, c, d):
+  f3(b, c, d)
+
+and def f3(a, b, c):
+  f2(b, c)
+
+and def f2(a, b):
+  f1(b)
+
+and def f1(a):
+  f0()
+
+and def f0():
+  printStack(8)
+
+f5(5, 6, 7, 8, 9)

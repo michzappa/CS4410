@@ -1,0 +1,100 @@
+def head(str): str[0..1]
+def tail(str): str[1..len(str)]
+
+def contains(set, char):
+  if !(len(char) == 1) :
+    fail("Char should be of length one")
+  else: if len(set) == 0 :
+    false
+  else: if equal(head(set), char) :
+    true
+  else:
+    contains(tail(set), char)
+
+def remove(set, char):
+  if !(len(char) == 1) :
+    fail("Char should be of length one")
+  else: if len(set) == 0 :
+    ""
+  else: if equal(head(set), char) :
+    tail(set)
+  else:
+    head(set) ^ remove(tail(set), char)
+
+
+def union(lhs, rhs):
+  let ll = len(lhs) in
+  if ll == 0 :
+    rhs
+  else: 
+    let lchar = head(lhs) in
+    if contains(rhs, lchar) :
+      union(tail(lhs), rhs)
+    else:
+      union(tail(lhs), rhs ^ lchar)
+
+def intersect(lhs, rhs):
+  let rec help =
+    (lambda(lhs, rhs, acc): 
+      let ll = len(lhs), rl = len(rhs) in
+      if (ll == 0) || (rl == 0) :
+        acc
+      else:
+        let lchar = head(lhs) in
+        if contains(rhs, lchar) :
+          help(tail(lhs), rhs, acc ^ lchar)
+        else:
+          help(tail(lhs), rhs, acc))
+  in
+  help(lhs, rhs, "")
+
+def diff(lhs, rhs):
+  if (len(rhs) == 0) || (len(lhs) == 0) :
+    lhs
+  else:
+    diff(remove(lhs, head(rhs)), tail(rhs))
+
+
+def same(lhs, rhs):
+  let l = len(intersect(lhs, rhs)) in
+  (l == len(lhs)) && (l == len(rhs))
+
+print("Verifying contains:");
+print(contains("abc", "a") == true);
+print(contains("abc", "b") == true);
+print(contains("abc", "c") == true);
+print(contains("abc", "d") == false);
+print(contains("abc", "e") == false);
+
+print("Verifying same:");
+print(same("abc", "cba") == true);
+print(same("abc", "cbad") == false);
+print(same("asdf", "lk") == false);
+print(same("abcd", "abcde") == false);
+
+print("Verifying remove:");
+print(same(remove("abc", "a"), "bc"));
+print(same(remove("abc", "b"), "ac"));
+print(same(remove("abc", "c"), "ab"));
+print(same(remove("abc", "d"), "abc"));
+
+print("Verifying intersect:");
+print(same(intersect("abc", "bca"), "abc"));
+print(same(intersect("agzebfc", "tbupca"), "abc"));
+print(same(intersect("gobl", "tof"), "o"));
+print(same(intersect("gary", ""), ""));
+
+print("Verifying union:");
+print(same(union("abc", "bca"), "abc"));
+print(same(union("agzebfc", "tbupca"), "agzebfctup"));
+print(same(union("gobl", "tof"), "gobltf"));
+print(same(union("gary", ""), "gary"));
+
+print("Verifying diff:");
+print(same(diff("abc", "bca"), ""));
+print(same(diff("agzebfc", "tbupca"), "gzef"));
+print(same(diff("gobl", "tof"), "gbl"));
+print(same(diff("gary", ""), "gary"));
+print(same(diff("gary", "dfk"), "gary"));
+
+"WOW Such cool sets!"

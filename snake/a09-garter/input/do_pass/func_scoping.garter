@@ -1,0 +1,6 @@
+let pair = (lambda (x,y): (lambda (b): if b: x else: y)) in
+let rec sum = (lambda (list): 
+    if istuple(list): 0 
+    else: list(true) + sum(list(false))) in
+let p = pair(1, pair(2, nil)) in
+sum(p)

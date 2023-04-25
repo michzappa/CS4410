@@ -1,0 +1,19 @@
+def make_incr():
+  let x = (0,) in
+  (lambda: x[0] := x[0] + 1)
+
+let incr = make_incr() in
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+print(incr());
+incr

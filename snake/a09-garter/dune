@@ -1,0 +1,21 @@
+(library
+  (name garter_impl)
+  (modules assembly compile environment errors exprs phases pretty runner lexer parser wellformed utils desugar anf)
+  (libraries ounit2 extlib unix)
+  (wrapped false))
+
+(ocamllex (modules lexer))
+(menhir (modules parser))
+
+(executable
+  (name main)
+  (modules main)
+  (libraries unix str garter_impl))
+
+(test
+  (name test)
+  (modules test)
+  (libraries unix str garter_impl))
+
+(env (dev (flags (:standard -warn-error -A))))
+

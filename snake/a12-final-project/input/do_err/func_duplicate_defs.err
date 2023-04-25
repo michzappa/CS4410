@@ -1,0 +1,4 @@
+The function name f, redefined at <do_err/func_duplicate_defs, 4:4-5:7>, duplicates one at <do_err/func_duplicate_defs, 1:0-2:7>
+The function name f, redefined at <do_err/func_duplicate_defs, 7:4-8:7>, duplicates one at <do_err/func_duplicate_defs, 1:0-2:7>
+The function name f, redefined at <do_err/func_duplicate_defs, 13:4-14:5>, duplicates one at <do_err/func_duplicate_defs, 1:0-2:7>
+The function name g, redefined at <do_err/func_duplicate_defs, 16:4-17:9>, duplicates one at <do_err/func_duplicate_defs, 10:4-11:6>

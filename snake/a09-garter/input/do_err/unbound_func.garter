@@ -1,0 +1,4 @@
+let a = f(3) in
+let b = f(4) in
+let c = g(5) in
+z(a, b, c)

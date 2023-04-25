@@ -1,0 +1,11 @@
+let t = (4, (5, nil)) in
+let s = (3, 2) in
+let tmod = t[1] := t in
+let smod = s[0] := s in
+let smod2 = s[1] := t in
+let x = print(s) in
+let y = print(t) in
+let s0 = print(s[0]) in
+let s1 = print(s[1]) in
+let x = print(t[1]) in
+t[0]

@@ -1,0 +1,4 @@
+The function called at <do_err/func_arity_mismatch, 7:8-7:24> expected an arity of 2, but received 5 arguments
+The function called at <do_err/func_arity_mismatch, 8:8-8:12> expected an arity of 2, but received 1 arguments
+The function called at <do_err/func_arity_mismatch, 9:8-9:11> expected an arity of 2, but received 0 arguments
+The function called at <do_err/func_arity_mismatch, 10:8-10:18> expected an arity of 0, but received 3 arguments

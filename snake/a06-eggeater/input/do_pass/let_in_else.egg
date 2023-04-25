@@ -1,0 +1,19 @@
+if false :
+    if true :
+        let a = 43, 
+            b = a,
+            c = 3 * 21
+        in
+        b
+    else:
+        42
+else:
+    let a = if true : -42 else: 6,
+        b = 60032
+    in
+    let a = a in
+    let b = b in
+    let c = a in
+    let d = if true : 1234 else: c in
+    let x = d, y = 3, z = a in
+    x

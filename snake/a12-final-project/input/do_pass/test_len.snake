@@ -1,0 +1,3 @@
+let h = "hello",
+    w = "world!" in
+print(len(h)); print(len(w)); len("{h}, {w}")

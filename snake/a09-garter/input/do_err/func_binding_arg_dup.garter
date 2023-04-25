@@ -1,0 +1,10 @@
+def f(a, (a, b)):
+  a
+
+def g((x, x)):
+  x
+
+def h((l, m, (l, z))):
+  l
+
+true

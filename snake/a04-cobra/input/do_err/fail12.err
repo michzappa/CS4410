@@ -1,0 +1,4 @@
+Binding error: The identifier x, used at <do_err/fail12, 1:0-1:1>, is not in scope
+Binding error: The identifier y, used at <do_err/fail12, 1:4-1:5>, is not in scope
+Binding error: The identifier z, used at <do_err/fail12, 1:8-1:9>, is not in scope
+Binding error: The identifier w, used at <do_err/fail12, 1:12-1:13>, is not in scope

@@ -1,0 +1,11 @@
+let a = true,
+    b = false,
+    c = true,
+    d = false,
+    e = true,
+    m = 5,
+    n = 32
+in
+((m < n) || (c == d)) &&
+(a || b || c || d || e) &&
+((m >= n) || (e == c))

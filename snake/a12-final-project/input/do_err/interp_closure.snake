@@ -1,0 +1,2 @@
+let b = (lambda: 4) in
+  "{b} is a lambda"

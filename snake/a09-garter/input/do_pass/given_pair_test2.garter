@@ -1,0 +1,5 @@
+let t = (4, (5, nil)) in
+  begin
+   t[1] := nil;
+   t
+  end

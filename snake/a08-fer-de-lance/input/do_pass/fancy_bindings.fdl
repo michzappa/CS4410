@@ -1,0 +1,5 @@
+let i = input() in
+let t = (i, i, (i, (i,))) in
+let (a, b, c) = t in
+let (d, (e)) = c in
+a + b + d + e

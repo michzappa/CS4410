@@ -1,0 +1,2 @@
+The identifier print, defined at <do_err/shadow_builtin_id, 1:0-2:3>, shadows a builtin identifier
+The identifier input, defined at <do_err/shadow_builtin_id, 4:0-5:3>, shadows a builtin identifier

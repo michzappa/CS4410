@@ -1,0 +1,4 @@
+<closure, arity = 0, free_var_cnt = 0, []>
+<closure, arity = 2, free_var_cnt = 1, [<closure, arity = 0, free_var_cnt = 0, []>]>
+<closure, arity = 1, free_var_cnt = 1, [<closure, arity = 3, free_var_cnt = 1, [<closure, arity = 1, free_var_cnt = -1, <cyclic closure>]>]>
+<closure, arity = 3, free_var_cnt = 1, [<closure, arity = 1, free_var_cnt = 1, [<closure, arity = 3, free_var_cnt = -1, <cyclic closure>]>]>

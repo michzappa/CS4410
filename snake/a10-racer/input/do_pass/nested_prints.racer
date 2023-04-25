@@ -1,0 +1,10 @@
+let x = print(4),
+    y = let a = print(print(x) + print(3))
+        in print(print(a) - print(2)),
+    z = print(print(y) * print(x))
+in
+let x = print(add1(print(x))),
+    y = print(sub1(print(y))),
+    z = print(add1(print(z)))
+in
+print(print(x) + print(print(y) * print(z)))

@@ -1,0 +1,13 @@
+let tup = (0, 0) in
+let inc_left  = (lambda: tup[0] := tup[0] + 1; tup[0]) in
+let inc_right = (lambda: tup[1] := tup[1] + 1; tup[1]) in
+print(tup);
+inc_left();
+print(tup);
+inc_right();
+print(tup);
+inc_right();inc_right();inc_right();
+print(tup);
+inc_left();inc_left();inc_left();inc_left();inc_left();
+print(tup);
+(inc_right(), inc_left())

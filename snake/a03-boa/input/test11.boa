@@ -1,0 +1,7 @@
+let cry = 42, sob = 21, scream = 63 in
+let segmentation_fault = 1000000 * 0 + 1 in
+if sub1(segmentation_fault) :
+    let winning = 13 * 13 in
+    winning
+else:
+    cry + sob + scream

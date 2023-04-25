@@ -1,0 +1,11 @@
+def garbage(a, b):
+  let c = (3, 4, 5) in
+  let d = (6, 7, 8) in
+  let e = (9, 10, 11) in
+  let f = (lambda: a; b) in
+  (lambda(x): a; b; c; d; e; f; x)
+
+let g = garbage(5, false) in
+let x = (1, 2, 3, 4) in
+let y = (1, 2, 3, 4) in
+g(5)

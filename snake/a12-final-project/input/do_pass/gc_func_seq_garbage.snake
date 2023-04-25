@@ -1,0 +1,23 @@
+def garbage():
+  (3, 4, 5);
+  (1, (5, 3), 6);
+  (2, 4, 6);
+  to_string(3);
+  (8, 9, 10, false, true);
+  (let a = 5 in (lambda: a + 3));
+  (58, -1, 312)
+
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage();
+garbage()

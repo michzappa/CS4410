@@ -1,0 +1,4 @@
+# a playground for input()
+let x = input(),
+    y = input() in
+  x == y

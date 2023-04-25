@@ -1,0 +1,7 @@
+let a = true,
+    b = false,
+    c = true,
+    d = false,
+    e = true
+in
+a && b || c && d || e && a

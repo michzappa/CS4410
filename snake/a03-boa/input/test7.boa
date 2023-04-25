@@ -1,0 +1,16 @@
+let x = 23 * 41 - 8 in
+if x :
+    if sub1(x * 2) :
+        let a = x in
+        let b = a + a + a in
+        b - a
+    else:
+        add1(x * 3)
+else:
+    let a = sub1(1) in
+    let a = add1(2), b = 4 * 3 in
+    let a = if 4 : 21 - 45 else: 1234, b = 5, c = 6 in
+    let a = 7, b = 8, c = 9, d = 10 in
+    let a = 11, b = 12, c = 13, d = 14, e = 15 in
+    let a = (let a = b, c = d, e = e in e) in
+    a

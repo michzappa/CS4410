@@ -1,0 +1,7 @@
+(1 < 5)
+&&
+(
+    let a = 5, b = 3, c = 4 in
+    let a = a * a, b = b * b, c = c * c in
+    (a + b + c) < (a * b * c)
+)

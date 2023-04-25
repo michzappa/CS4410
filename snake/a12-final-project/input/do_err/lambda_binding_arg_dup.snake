@@ -1,0 +1,4 @@
+let rec f = (lambda(a, (a, b)): a),
+        g = (lambda((x, x)): x),
+        h = (lambda((l, m, (l, z))): l) in
+true
